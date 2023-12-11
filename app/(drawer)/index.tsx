@@ -5,7 +5,6 @@ const Page = () => {
     <View className={styles.container}>
       <Text className={styles.title}>Home</Text>
       <View className={styles.separator} />
-      <EditScreenInfo path="app/(tabs)/index.tsx" />
     </View>
   );
 };
