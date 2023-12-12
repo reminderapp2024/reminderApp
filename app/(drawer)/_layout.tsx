@@ -1,23 +1,25 @@
-import { Ionicons } from '@expo/vector-icons';
-import { Drawer } from 'expo-router/drawer';
+import { Ionicons } from "@expo/vector-icons";
+import { Drawer } from "expo-router/drawer";
 
 const DrawerLayout = () => (
   <Drawer>
     <Drawer.Screen
       name="index"
       options={{
-        headerTitle: 'Home',
-        drawerLabel: 'Home',
-        drawerIcon: ({ size, color }) => <Ionicons name="home-outline" size={size} color={color} />,
+        headerTitle: "Home",
+        drawerLabel: "Home",
+        drawerIcon: ({ size, color }) => (
+          <Ionicons name="home-outline" size={size} color={color} />
+        ),
       }}
     />
     <Drawer.Screen
-      name="news"
+      name="settings"
       options={{
-        headerTitle: 'Newsfeed',
-        drawerLabel: 'News',
+        headerTitle: "Settings",
+        drawerLabel: "Settings",
         drawerIcon: ({ size, color }) => (
-          <Ionicons name="newspaper-outline" size={size} color={color} />
+          <Ionicons name="cog-outline" size={size} color={color} />
         ),
       }}
     />
